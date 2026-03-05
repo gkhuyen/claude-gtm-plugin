@@ -4,6 +4,5 @@
   "description": "Cold email, outbound sales, and outreach sequence generation skills",
   "author": {
     "name": "mbajaj"
-  },
-  "commands": "../commands"
+  }
 }

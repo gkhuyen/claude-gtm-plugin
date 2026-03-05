@@ -4,6 +4,5 @@
   "description": "Social media management skills for LinkedIn, Twitter/X, YouTube, and cross-platform content",
   "author": {
     "name": "mbajaj"
-  },
-  "commands": "../commands"
+  }
 }
