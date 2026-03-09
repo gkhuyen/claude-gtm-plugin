@@ -1,1 +1,22 @@
 .agents
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment & secrets
+.env
+.env.local
+*.key
+
+# OS
+.DS_Store
+Thumbs.db

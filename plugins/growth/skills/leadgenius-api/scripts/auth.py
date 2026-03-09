@@ -14,7 +14,7 @@ def main():
     parser.add_argument("--email", help="User email")
     parser.add_argument("--password", help="User password")
     parser.add_argument("--base-url", default=DEFAULT_BASE_URL, help=f"Application base URL (default: {DEFAULT_BASE_URL})")
-    parser.add_argument("--save", action="store_true", default=True, help="Save credentials (default: True)")
+    parser.add_argument("--save", action="store_true", default=False, help="Save auth token to ~/.leadgenius_auth.json in plaintext (default: False)")
 
     args = parser.parse_args()
 
