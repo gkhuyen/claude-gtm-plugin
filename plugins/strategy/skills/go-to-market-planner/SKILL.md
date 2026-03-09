@@ -1,5 +1,5 @@
 ---
-name: Go-to-Market-Planner
+name: go-to-market-planner
 description: Plan product launches and go-to-market strategy. Use when launching products, entering new markets, or planning marketing campaigns. Covers positioning, channels, messaging, and launch execution.
 version: 1.0.0
 ---

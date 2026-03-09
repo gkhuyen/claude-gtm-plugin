@@ -1,6 +1,6 @@
 # GTM Skills
 
-Go-to-market skills that turn Claude into a GTM specialist. 184 skills across SEO & AI search, content, outbound, sales, growth, analytics, strategy, ads, social, and CRM — plus a `/bootstrap` command that onboards Claude to your brand, voice, and goals. Built for [Claude Code](https://claude.com/product/claude-code), also compatible with [Claude Cowork](https://claude.com/product/cowork) and any agent that supports the [Agent Skills spec](https://agentskills.io).
+Go-to-market skills that turn Claude into a GTM specialist. 183 skills across SEO & AI search, content, outbound, sales, growth, analytics, strategy, ads, social, and CRM — plus a `/bootstrap` command that onboards Claude to your brand, voice, and goals. Built for [Claude Code](https://claude.com/product/claude-code), also compatible with [Claude Cowork](https://claude.com/product/cowork) and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
 ## Why This Plugin
 
@@ -169,7 +169,7 @@ Skills reference each other and build on the context files created by `/bootstra
 
 ### Strategy & Positioning (29)
 
-`startup-go-to-market` · `Go-to-Market-Planner` · `launch-strategy` · `positioning-messaging` · `brand-messaging-architecture` · `storybrand-messaging` · `branding` · `design-branding` · `webconsulting-branding` · `pricing-strategy` · `pricing-strategist` · `gtm-pricing` · `product-strategy` · `product-strategist` · `product-marketing-context` · `prd-v09-gtm-strategy` · `technical-launch-planner` · `working-backwards` · `buyer-persona-generator` · `growth-product-manager` · `marketing-strategy-pmm` · `business-competitor-analysis` · `competitor-analysis` · `competitor-price-tracker` · `competitor-teardown` · `market-researcher` · `market-research-reports` · `pitch-deck` · `pitch-deck-visuals`
+`startup-go-to-market` · `go-to-market-planner` · `launch-strategy` · `positioning-messaging` · `brand-messaging-architecture` · `storybrand-messaging` · `branding` · `design-branding` · `webconsulting-branding` · `pricing-strategy` · `pricing-strategist` · `gtm-pricing` · `product-strategy` · `product-strategist` · `product-marketing-context` · `prd-v09-gtm-strategy` · `technical-launch-planner` · `working-backwards` · `buyer-persona-generator` · `growth-product-manager` · `marketing-strategy-pmm` · `business-competitor-analysis` · `competitor-analysis` · `competitor-price-tracker` · `competitor-teardown` · `market-researcher` · `market-research-reports` · `pitch-deck` · `pitch-deck-visuals`
 
 ### Ads & Paid (7)
 
