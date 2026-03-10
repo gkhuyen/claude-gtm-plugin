@@ -1,6 +1,6 @@
 # GTM Skills
 
-Go-to-market skills that turn Claude into a GTM specialist. 183 skills across SEO & AI search, content, outbound, sales, growth, analytics, strategy, ads, social, and CRM — plus a `/bootstrap` command that onboards Claude to your brand, voice, and goals. Built for [Claude Code](https://claude.com/product/claude-code), also compatible with [Claude Cowork](https://claude.com/product/cowork) and any agent that supports the [Agent Skills spec](https://agentskills.io).
+Go-to-market skills that turn Claude into a GTM specialist. 62 skills across SEO & AI search, content, outbound, sales, growth, analytics, strategy, ads, social, and CRM — plus a `/bootstrap` command that onboards Claude to your brand, voice, and goals. Built for [Claude Code](https://claude.com/product/claude-code), also compatible with [Claude Cowork](https://claude.com/product/cowork) and any agent that supports the [Agent Skills spec](https://agentskills.io).
 
 ## Why This Plugin
 
@@ -119,16 +119,16 @@ gtm-plugin/
 ├── commands/
 │   └── bootstrap.md         # /bootstrap onboarding command
 └── plugins/
-    ├── seo/                 # 20 skills (includes AI search & GEO)
-    ├── content/             # 19 skills
-    ├── social/              # 24 skills
-    ├── outbound/            # 12 skills
-    ├── sales/               # 9 skills
-    ├── growth/              # 45 skills
-    ├── analytics/           # 14 skills
-    ├── strategy/            # 29 skills
-    ├── ads/                 # 7 skills
-    └── crm/                 # 5 skills
+    ├── seo/                 # 2 skills
+    ├── content/             # 9 skills
+    ├── social/              # 15 skills
+    ├── outbound/            # 1 skill
+    ├── sales/               # 1 skill
+    ├── growth/              # 18 skills
+    ├── analytics/           # 4 skills
+    ├── strategy/            # 8 skills
+    ├── ads/                 # 2 skills
+    └── crm/                 # 2 skills
 ```
 
 **Skills** are markdown files with YAML frontmatter that give Claude specialized knowledge for specific tasks. Claude activates them automatically when it detects a matching task — or you can invoke them directly.
@@ -139,45 +139,26 @@ Skills reference each other and build on the context files created by `/bootstra
 
 ## Skills
 
-### Ads & Paid (7)
+### Ads & Paid (2)
 
-├── `ad-copy-generator`
-├── `ad-creative`
-├── `landing-page-copywriter`
-├── `landing-page-guide-v2`
-├── `landing-page-vercel`
-├── `landing-page`
-└── `paid-ads`
+├── `ad-campaign-management`
+└── `landing-page-optimization`
 
-### Analytics & Data (8)
+### Analytics & Data (4)
 
-├── `analytics-interpretation`
-├── `analytics-tracking`
 ├── `app-store-optimization`
-├── `competitive-ads-extractor`
-├── `product-analytics`
+├── `data-and-funnel-analytics`
 ├── `qr-code-generator`
-├── `roi-analyzer`
 └── `utm-builder`
 
-### Content & Copywriting (19)
+### Content & Copywriting (9)
 
-├── `blog-post-writer`
-├── `blog-writer`
 ├── `blog-writing-specialist`
-├── `blog-writing`
-├── `content-brief`
 ├── `content-creation-and-marketing`
-├── `content-optimizer`
-├── `content-research`
 ├── `content-strategy-and-planning`
-├── `copy-editing`
-├── `copy`
-├── `copywriting`
-├── `newsletter-curation`
-├── `newsletter`
+├── `copywriting-core`
+├── `newsletter-management`
 ├── `ph-content-recycling`
-├── `technical-blog-writing`
 ├── `twitter-algorithm-optimizer`
 ├── `webinar-content-and-events`
 └── `writing-linkedin-posts`
@@ -187,7 +168,7 @@ Skills reference each other and build on the context files created by `/bootstra
 ├── `crm-integration`
 └── `marketing-automation`
 
-### Growth & Conversion (22)
+### Growth & Conversion (18)
 
 ├── `ab-test-setup`
 ├── `challenge-funnel`
@@ -195,11 +176,7 @@ Skills reference each other and build on the context files created by `/bootstra
 ├── `customer-success-and-retention`
 ├── `executive-dashboard-generator`
 ├── `free-tool-strategy`
-├── `funnel-analysis`
-├── `funnel-validator`
 ├── `growth-strategy`
-├── `launch-gtm-execution`
-├── `launch-marketing`
 ├── `lead-generation-and-demand`
 ├── `marketing-campaign-management`
 ├── `personalization-at-scale`
@@ -212,60 +189,28 @@ Skills reference each other and build on the context files created by `/bootstra
 ├── `skill-navigator`
 └── `user-onboarding`
 
-### Email & Outbound (3)
+### Email & Outbound (1)
 
-├── `cold-outreach-generator`
-├── `email-design`
 └── `outbound-email-strategy`
 
-### Sales (4)
+### Sales (1)
 
-├── `revops`
-├── `sales-compensation`
-├── `sales-strategy-and-enablement`
-└── `startup-icp-definer`
+└── `sales-and-revenue-operations`
 
-### SEO & AI Search (20)
+### SEO & AI Search (2)
 
-├── `aeo-optimization`
-├── `aeo-scorecard`
-├── `ai-search-optimization`
-├── `ai-seo`
-├── `backlink-analyzer`
-├── `competitor-alternatives`
-├── `geo-aeo-optimization`
-├── `keyword-cluster-builder`
-├── `keyword-expansion`
-├── `keyword-research`
-├── `programmatic-seo`
-├── `project-aeo-monitoring-tools`
-├── `schema-markup`
-├── `seo-audit`
-├── `seo-backlink-strategy`
-├── `seo-geo`
-├── `seo-optimizer`
-├── `seo`
-├── `serp-analysis`
-└── `site-architecture`
+├── `keyword-research-and-clustering`
+└── `seo-and-aeo-strategy`
 
-### Social Media (24)
+### Social Media (15)
 
-├── `ai-social-media-content`
-├── `community-architect`
-├── `community-builder`
-├── `community-building-strategist`
 ├── `community-building`
 ├── `linkedin-automation`
 ├── `linkedin-content`
 ├── `linkedin-personal-branding`
 ├── `linkedin-post-optimizer`
 ├── `linkedin`
-├── `social-community`
-├── `social-content`
-├── `social-graphics`
-├── `social-media-analyzer`
-├── `social-media`
-├── `social-repurposer`
+├── `social-media-management`
 ├── `twitter-x`
 ├── `writing-linkedin-posts`
 ├── `x-impact-checker`
@@ -275,37 +220,16 @@ Skills reference each other and build on the context files created by `/bootstra
 ├── `youtube-video-hook`
 └── `youtube`
 
-### Strategy & Positioning (29)
+### Strategy & Positioning (8)
 
-├── `brand-messaging-architecture`
-├── `branding`
-├── `business-competitor-analysis`
-├── `buyer-persona-generator`
+├── `brand-messaging-and-positioning`
 ├── `competitor-analysis`
-├── `competitor-price-tracker`
-├── `competitor-teardown`
-├── `design-branding`
-├── `go-to-market-planner`
-├── `growth-product-manager`
-├── `gtm-pricing`
-├── `launch-strategy`
-├── `market-research-reports`
-├── `market-researcher`
+├── `go-to-market-strategy`
+├── `market-research-analysis`
 ├── `marketing-strategy-pmm`
-├── `pitch-deck-visuals`
-├── `pitch-deck`
-├── `positioning-messaging`
-├── `prd-v09-gtm-strategy`
-├── `pricing-strategist`
+├── `pitch-deck-creation`
 ├── `pricing-strategy`
-├── `product-marketing-context`
-├── `product-strategist`
-├── `product-strategy`
-├── `startup-go-to-market`
-├── `storybrand-messaging`
-├── `technical-launch-planner`
-├── `webconsulting-branding`
-└── `working-backwards`
+└── `product-strategy-and-marketing`
 
 ## Routing Rules
 
