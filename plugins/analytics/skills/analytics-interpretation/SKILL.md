@@ -1,6 +1,6 @@
 ---
 name: analytics-interpretation
-description: Interpret GA4 and GSC data with benchmarks, status indicators, and actionable insights
+description: Use this skill when interpreting GA4 and GSC data with benchmarks, status indicators, and actionable insights
 ---
 
 # Analytics Interpretation

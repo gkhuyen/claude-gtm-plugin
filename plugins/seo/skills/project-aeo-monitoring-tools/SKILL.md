@@ -1,8 +1,9 @@
 ---
 name: project-aeo-monitoring-tools
-description: Build custom AI search monitoring tools for competitive AEO analysis. Covers API access, scraping architecture, legal compliance, and cost estimation.
-version: 1.0.0
-tags: [aeo, monitoring, scraping, api, competitive-analysis, engineering]
+description: Use this skill when building custom AI search monitoring tools for competitive AEO analysis. Covers API access, scraping architecture, legal compliance, and cost estimation.
+metadata:
+  version: 1.0.0
+  tags: [aeo, monitoring, scraping, api, competitive-analysis, engineering]
 ---
 
 # AEO Monitoring Tools

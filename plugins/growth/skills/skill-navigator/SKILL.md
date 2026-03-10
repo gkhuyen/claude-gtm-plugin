@@ -1,6 +1,6 @@
 ---
 name: skill-navigator
-description: The 100th skill! Your intelligent guide to all 99 other skills. Recommends the perfect skill for any task, creates skill combinations, and helps you discover capabilities you didn't know you had.
+description: Use this skill when you need guidance on which skill to use for any task. Recommends the perfect skill, creates skill combinations, and helps you discover capabilities you didn't know you had.
 ---
 
 # Skill Navigator

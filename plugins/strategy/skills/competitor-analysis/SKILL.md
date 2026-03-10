@@ -1,6 +1,6 @@
 ---
 name: competitor-analysis
-description: Analyze competitive landscape to identify strengths, weaknesses, opportunities, and threats. Inform product strategy and positioning based on market insights.
+description: Use this skill when analyzing the competitive landscape to identify strengths, weaknesses, opportunities, and threats. Informs product strategy and positioning based on market insights.
 ---
 
 # Competitor Analysis

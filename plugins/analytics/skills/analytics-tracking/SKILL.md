@@ -5,263 +5,113 @@ description: When the user wants to set up, improve, or audit analytics tracking
 
 # Analytics Tracking
 
-You are an expert in analytics implementation and measurement. Your goal is to help set up tracking that provides actionable insights for marketing and product decisions.
+Expert analytics implementation across GA4, GTM, Mixpanel, Amplitude, and Segment.
+
+**Principles**:
+- Track for decisions, not data — every event should inform an action
+- Start with the questions, work backwards to what you need to track
+- Consistent naming conventions before implementation
+- Quality > quantity
+
+---
 
 ## Initial Assessment
 
-Before implementing tracking, understand:
-
-1. **Business Context**
-   - What decisions will this data inform?
-   - What are the key conversion actions?
-   - What questions need answering?
-
-2. **Current State**
-   - What tracking exists?
-   - What tools are in use (GA4, Mixpanel, Amplitude, etc.)?
-   - What's working/not working?
-
-3. **Technical Context**
-   - What's the tech stack?
-   - Who will implement and maintain?
-   - Any privacy/compliance requirements?
+Before implementing, understand:
+1. What decisions will this data inform?
+2. What's the current tracking state and toolstack?
+3. What are the key conversion actions?
+4. Any privacy/compliance requirements (GDPR, CCPA)?
 
 ---
 
-## Core Principles
+## Event Naming Convention
 
-### 1. Track for Decisions, Not Data
-- Every event should inform a decision
-- Avoid vanity metrics
-- Quality > quantity of events
+**Recommended format**: `object_action` in lowercase snake_case
 
-### 2. Start with the Questions
-- What do you need to know?
-- What actions will you take based on this data?
-- Work backwards to what you need to track
+```
+signup_completed | cta_hero_clicked | checkout_started | onboarding_step_completed
+```
 
-### 3. Name Things Consistently
-- Naming conventions matter
-- Establish patterns before implementing
-- Document everything
-
-### 4. Maintain Data Quality
-- Validate implementation
-- Monitor for issues
-- Clean data > more data
+Rules: specific over vague (`cta_hero_clicked` not `button_clicked`), past tense for completed actions, context in properties (not event name), no spaces or special characters.
 
 ---
 
-## Tracking Plan Framework
+## Tracking Plan
 
-### Structure
+Every event should be documented with:
 
 ```
-Event Name | Event Category | Properties | Trigger | Notes
----------- | ------------- | ---------- | ------- | -----
+Event Name | Category | Properties | Trigger | Notes
 ```
 
-### Event Types
+### Marketing Site Events
 
-**Pageviews**
-- Automatic in most tools
-- Enhanced with page metadata
+| Event | Key Properties |
+|-------|---------------|
+| `page_view` | page_title, page_location, referrer |
+| `cta_clicked` | button_text, location, page |
+| `form_submitted` | form_type, page |
+| `resource_downloaded` | resource_name, type |
+| `video_played` | video_id, title |
+| `scroll_depth` | percent (25/50/75/100) |
+| `signup_started` | source, medium |
+| `signup_completed` | method, plan |
+| `demo_requested` | page |
 
-**User Actions**
-- Button clicks
-- Form submissions
-- Feature usage
-- Content interactions
+### Product / App Events
 
-**System Events**
-- Signup completed
-- Purchase completed
-- Subscription changed
-- Errors occurred
+| Event | Key Properties |
+|-------|---------------|
+| `onboarding_step_completed` | step_number, step_name |
+| `onboarding_completed` | duration_seconds, steps_skipped |
+| `feature_used` | feature_name, context |
+| `trial_started` | plan, source |
+| `pricing_viewed` | current_plan |
+| `checkout_started` | plan, billing_period |
+| `purchase_completed` | plan, value, currency |
+| `subscription_cancelled` | plan, reason |
 
-**Custom Conversions**
-- Goal completions
-- Funnel stages
-- Business-specific milestones
+### E-commerce Events
+
+| Event | Key Properties |
+|-------|---------------|
+| `product_viewed` | product_id, category, price |
+| `product_added_to_cart` | product_id, price, quantity |
+| `checkout_started` | cart_value, items_count |
+| `purchase_completed` | order_id, value, products[ ] |
 
 ---
 
-## Event Naming Conventions
+## Standard Event Properties
 
-### Format Options
+Always include these where relevant:
 
-**Object-Action (Recommended)**
-```
-signup_completed
-button_clicked
-form_submitted
-article_read
-```
+**User context**: `user_id`, `user_type` (free/paid/admin), `account_id`, `plan_type`
 
-**Action-Object**
-```
-click_button
-submit_form
-complete_signup
-```
+**Attribution**: `source`, `medium`, `campaign`, `content`, `term` (UTM params)
 
-**Category_Object_Action**
-```
-checkout_payment_completed
-blog_article_viewed
-onboarding_step_completed
-```
+**Page**: `page_title`, `page_location`, `content_group`
 
-### Best Practices
+**Timing**: `timestamp`, `session_duration`
 
-- Lowercase with underscores
-- Be specific: `cta_hero_clicked` vs. `button_clicked`
-- Include context in properties, not event name
-- Avoid spaces and special characters
-- Document decisions
-
----
-
-## Essential Events to Track
-
-### Marketing Site
-
-**Navigation**
-- page_view (enhanced)
-- outbound_link_clicked
-- scroll_depth (25%, 50%, 75%, 100%)
-
-**Engagement**
-- cta_clicked (button_text, location)
-- video_played (video_id, duration)
-- form_started
-- form_submitted (form_type)
-- resource_downloaded (resource_name)
-
-**Conversion**
-- signup_started
-- signup_completed
-- demo_requested
-- contact_submitted
-
-### Product/App
-
-**Onboarding**
-- signup_completed
-- onboarding_step_completed (step_number, step_name)
-- onboarding_completed
-- first_key_action_completed
-
-**Core Usage**
-- feature_used (feature_name)
-- action_completed (action_type)
-- session_started
-- session_ended
-
-**Monetization**
-- trial_started
-- pricing_viewed
-- checkout_started
-- purchase_completed (plan, value)
-- subscription_cancelled
-
-### E-commerce
-
-**Browsing**
-- product_viewed (product_id, category, price)
-- product_list_viewed (list_name, products)
-- product_searched (query, results_count)
-
-**Cart**
-- product_added_to_cart
-- product_removed_from_cart
-- cart_viewed
-
-**Checkout**
-- checkout_started
-- checkout_step_completed (step)
-- payment_info_entered
-- purchase_completed (order_id, value, products)
-
----
-
-## Event Properties (Parameters)
-
-### Standard Properties to Consider
-
-**Page/Screen**
-- page_title
-- page_location (URL)
-- page_referrer
-- content_group
-
-**User**
-- user_id (if logged in)
-- user_type (free, paid, admin)
-- account_id (B2B)
-- plan_type
-
-**Campaign**
-- source
-- medium
-- campaign
-- content
-- term
-
-**Product** (e-commerce)
-- product_id
-- product_name
-- category
-- price
-- quantity
-- currency
-
-**Timing**
-- timestamp
-- session_duration
-- time_on_page
-
-### Best Practices
-
-- Use consistent property names
-- Include relevant context
-- Don't duplicate GA4 automatic properties
-- Avoid PII in properties
-- Document expected values
+Avoid PII in event properties. Don't duplicate GA4 automatic properties.
 
 ---
 
 ## GA4 Implementation
 
-### Configuration
-
-**Data Streams**
-- One stream per platform (web, iOS, Android)
-- Enable enhanced measurement
-
-**Enhanced Measurement Events**
-- page_view (automatic)
-- scroll (90% depth)
-- outbound_click
-- site_search
-- video_engagement
-- file_download
-
-**Recommended Events**
-- Use Google's predefined events when possible
-- Correct naming for enhanced reporting
-- See: https://support.google.com/analytics/answer/9267735
-
-### Custom Events (GA4)
+### Setup
 
 ```javascript
-// gtag.js
+// gtag.js — custom event
 gtag('event', 'signup_completed', {
   'method': 'email',
-  'plan': 'free'
+  'plan': 'free',
+  'user_id': userId
 });
 
-// Google Tag Manager (dataLayer)
+// GTM dataLayer
 dataLayer.push({
   'event': 'signup_completed',
   'method': 'email',
@@ -269,271 +119,74 @@ dataLayer.push({
 });
 ```
 
-### Conversions Setup
+**Enhanced Measurement** (enable in GA4): page_view, scroll (90%), outbound_click, site_search, video_engagement, file_download.
 
-1. Collect event in GA4
-2. Mark as conversion in Admin > Events
-3. Set conversion counting (once per session or every time)
-4. Import to Google Ads if needed
+**Conversions**: Admin → Events → Toggle "Mark as conversion". Set counting: once per session (form submit) or every time (purchase).
 
-### Custom Dimensions and Metrics
+**Custom Dimensions**: Admin → Custom definitions → set scope (Event/User/Item). Parameter name must match exactly.
 
-**When to use:**
-- Properties you want to segment by
-- Metrics you want to aggregate
-- Beyond standard parameters
+### GA4 Reporting Essentials
 
-**Setup:**
-1. Create in Admin > Custom definitions
-2. Scope: Event, User, or Item
-3. Parameter name must match
+- **Funnel Exploration**: Map signup → activation → purchase → retention
+- **Cohort Analysis**: Compare retention by acquisition date/channel
+- **Path Exploration**: See actual user journeys through your product
+- **Segment Comparisons**: Paid vs. organic, mobile vs. desktop, free vs. paid users
 
 ---
 
-## Google Tag Manager Implementation
+## Google Tag Manager (GTM)
 
-### Container Structure
+**Container structure**:
+- Tags: GA4 Configuration (base) + GA4 Event tags
+- Triggers: pageview, custom event, click, form submission
+- Variables: dataLayer variables, built-in (Page URL, Click Text), lookup tables
 
-**Tags**
-- GA4 Configuration (base)
-- GA4 Event tags (one per event or grouped)
-- Conversion pixels (Facebook, LinkedIn, etc.)
+**Testing**: Preview mode before publishing. Check Tag Assistant shows events firing with correct properties.
 
-**Triggers**
-- Page View (DOM Ready, Window Loaded)
-- Click - All Elements / Just Links
-- Form Submission
-- Custom Events
-
-**Variables**
-- Built-in: Click Text, Click URL, Page Path, etc.
-- Data Layer variables
-- JavaScript variables
-- Lookup tables
-
-### Best Practices
-
-- Use folders to organize
-- Consistent naming (Tag_Type_Description)
-- Version notes on every publish
-- Preview mode for testing
-- Workspaces for team collaboration
-
-### Data Layer Pattern
-
-```javascript
-// Push custom event
-dataLayer.push({
-  'event': 'form_submitted',
-  'form_name': 'contact',
-  'form_location': 'footer'
-});
-
-// Set user properties
-dataLayer.push({
-  'user_id': '12345',
-  'user_type': 'premium'
-});
-
-// E-commerce event
-dataLayer.push({
-  'event': 'purchase',
-  'ecommerce': {
-    'transaction_id': 'T12345',
-    'value': 99.99,
-    'currency': 'USD',
-    'items': [{
-      'item_id': 'SKU123',
-      'item_name': 'Product Name',
-      'price': 99.99
-    }]
-  }
-});
-```
+**Best practices**: One GA4 Config tag. Use dataLayer pushes from app code, capture in GTM tags. Version control with meaningful publish notes.
 
 ---
 
-## UTM Parameter Strategy
+## UTM Parameters
 
-### Standard Parameters
+Convention: `utm_source={channel}&utm_medium={cpc|email|organic|social}&utm_campaign={id}&utm_content={variant}&utm_term={keyword}`
 
-| Parameter | Purpose | Example |
-|-----------|---------|---------|
-| utm_source | Where traffic comes from | google, facebook, newsletter |
-| utm_medium | Marketing medium | cpc, email, social, referral |
-| utm_campaign | Campaign name | spring_sale, product_launch |
-| utm_content | Differentiate versions | hero_cta, sidebar_link |
-| utm_term | Paid search keywords | running+shoes |
-
-### Naming Conventions
-
-**Lowercase everything**
-- google, not Google
-- email, not Email
-
-**Use underscores or hyphens consistently**
-- product_launch or product-launch
-- Pick one, stick with it
-
-**Be specific but concise**
-- blog_footer_cta, not cta1
-- 2024_q1_promo, not promo
-
-### UTM Documentation
-
-Track all UTMs in a spreadsheet or tool:
-
-| Campaign | Source | Medium | Content | Full URL | Owner | Date |
-|----------|--------|--------|---------|----------|-------|------|
-| ... | ... | ... | ... | ... | ... | ... |
-
-### UTM Builder
-
-Provide a consistent UTM builder link to team:
-- Google's URL builder
-- Internal tool
-- Spreadsheet formula
+**Rules**:
+- Apply to ALL paid and email links
+- Never use on internal links (breaks session attribution)
+- Consistent naming: use lowercase, hyphens not spaces
+- Document in a UTM tracking sheet
 
 ---
 
-## Debugging and Validation
+## Multi-Tool Setups
 
-### Testing Tools
+**GA4 + Mixpanel/Amplitude**: Use Segment as CDP to send events once, route to multiple tools. Define schema in Segment, map properties per destination.
 
-**GA4 DebugView**
-- Real-time event monitoring
-- Enable with ?debug_mode=true
-- Or via Chrome extension
+**Server-side tracking**: Use GA4 Measurement Protocol for backend events (purchases, subscriptions). Reduces ad blocker impact.
 
-**GTM Preview Mode**
-- Test triggers and tags
-- See data layer state
-- Validate before publish
+---
 
-**Browser Extensions**
-- GA Debugger
-- Tag Assistant
-- dataLayer Inspector
+## Validation & QA
 
-### Validation Checklist
-
-- [ ] Events firing on correct triggers
-- [ ] Property values populating correctly
+**Before launch**:
+- [ ] Events fire in GA4 DebugView
+- [ ] Properties have expected values
 - [ ] No duplicate events
-- [ ] Works across browsers
-- [ ] Works on mobile
-- [ ] Conversions recorded correctly
-- [ ] User ID passing when logged in
-- [ ] No PII leaking
+- [ ] Conversions marked correctly
+- [ ] UTM parameters captured on landing
 
-### Common Issues
-
-**Events not firing**
-- Trigger misconfigured
-- Tag paused
-- GTM not loaded on page
-
-**Wrong values**
-- Variable not configured
-- Data layer not pushing correctly
-- Timing issues (fire before data ready)
-
-**Duplicate events**
-- Multiple GTM containers
-- Multiple tag instances
-- Trigger firing multiple times
+**Ongoing monitoring**:
+- Weekly: Check for sudden drops in key events (>20% change = investigate)
+- Monthly: Audit for new pages/features without tracking
+- Quarterly: Full tracking plan review — remove stale events, add missing ones
 
 ---
 
-## Privacy and Compliance
+## Privacy & Compliance
 
-### Considerations
+**GDPR/CCPA**: Implement consent management (OneTrust, Cookiebot). Block GA4 until consent granted. Use IP anonymization (`anonymize_ip: true`).
 
-- Cookie consent required in EU/UK/CA
-- No PII in analytics properties
-- Data retention settings
-- User deletion capabilities
-- Cross-device tracking consent
+**GA4 data retention**: Set to 14 months max (Admin → Data Settings). Enable Google Signals only if needed.
 
-### Implementation
-
-**Consent Mode (GA4)**
-- Wait for consent before tracking
-- Use consent mode for partial tracking
-- Integrate with consent management platform
-
-**Data Minimization**
-- Only collect what you need
-- IP anonymization
-- No PII in custom dimensions
-
----
-
-## Output Format
-
-### Tracking Plan Document
-
-```
-# [Site/Product] Tracking Plan
-
-## Overview
-- Tools: GA4, GTM
-- Last updated: [Date]
-- Owner: [Name]
-
-## Events
-
-### Marketing Events
-
-| Event Name | Description | Properties | Trigger |
-|------------|-------------|------------|---------|
-| signup_started | User initiates signup | source, page | Click signup CTA |
-| signup_completed | User completes signup | method, plan | Signup success page |
-
-### Product Events
-[Similar table]
-
-## Custom Dimensions
-
-| Name | Scope | Parameter | Description |
-|------|-------|-----------|-------------|
-| user_type | User | user_type | Free, trial, paid |
-
-## Conversions
-
-| Conversion | Event | Counting | Google Ads |
-|------------|-------|----------|------------|
-| Signup | signup_completed | Once per session | Yes |
-
-## UTM Convention
-
-[Guidelines]
-```
-
-### Implementation Code
-
-Provide ready-to-use code snippets
-
-### Testing Checklist
-
-Specific validation steps
-
----
-
-## Questions to Ask
-
-If you need more context:
-1. What tools are you using (GA4, Mixpanel, etc.)?
-2. What key actions do you want to track?
-3. What decisions will this data inform?
-4. Who implements - dev team or marketing?
-5. Are there privacy/consent requirements?
-6. What's already tracked?
-
----
-
-## Related Skills
-
-- **ab-test-setup**: For experiment tracking
-- **seo-audit**: For organic traffic analysis
-- **page-cro**: For conversion optimization (uses this data)
+**PII hygiene**: Never send email, name, or phone as event properties. Use hashed user IDs only.

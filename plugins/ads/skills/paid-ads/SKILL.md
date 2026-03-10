@@ -1,7 +1,8 @@
 ---
 name: paid-ads
-description: Create and optimize paid advertising campaigns across platforms
-tags: [ads, paid, acquisition]
+description: Use this skill when creating and optimizing paid advertising campaigns across platforms
+metadata:
+  tags: [ads, paid, acquisition]
 ---
 
 # Paid Ads Skill

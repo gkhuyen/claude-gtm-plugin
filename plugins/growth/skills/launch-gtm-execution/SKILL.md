@@ -1,24 +1,25 @@
 ---
 name: launch-gtm-execution
-version: "2.0.0"
-description: Master go-to-market strategy, launch planning and execution, sales enablement, and marketing campaigns. Execute successful product launches.
-sasmp_version: "1.3.0"
-bonded_agent: 05-launch-gtm
-bond_type: PRIMARY_BOND
-parameters:
-  - name: launch_date
-    type: string
-    format: date
-    required: true
-  - name: gtm_model
-    type: string
-    enum: [direct_sales, self_service, sales_dev, channel]
-retry_logic:
-  max_attempts: 3
-  backoff: exponential
-logging:
-  level: info
-  hooks: [start, complete, error]
+description: Use this skill when mastering go-to-market strategy, launch planning and execution, sales enablement, and marketing campaigns. Execute successful product launches.
+metadata:
+  version: "2.0.0"
+  sasmp_version: "1.3.0"
+  bonded_agent: 05-launch-gtm
+  bond_type: PRIMARY_BOND
+  parameters:
+    - name: launch_date
+      type: string
+      format: date
+      required: true
+    - name: gtm_model
+      type: string
+      enum: [direct_sales, self_service, sales_dev, channel]
+  retry_logic:
+    max_attempts: 3
+    backoff: exponential
+  logging:
+    level: info
+    hooks: [start, complete, error]
 ---
 
 # Launch & Go-To-Market Skill

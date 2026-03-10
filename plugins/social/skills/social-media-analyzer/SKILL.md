@@ -1,6 +1,6 @@
 ---
 name: social-media-analyzer
-description: Analyzes social media campaign performance across platforms with engagement metrics, ROI calculations, and audience insights for data-driven marketing decisions
+description: Use this skill when analyzing social media campaign performance across platforms with engagement metrics, ROI calculations, and audience insights for data-driven marketing decisions
 ---
 
 # Social Media Campaign Analyzer

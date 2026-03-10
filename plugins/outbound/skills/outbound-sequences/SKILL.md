@@ -1,6 +1,6 @@
 ---
 name: outbound-sequences
-description: Templates and frameworks for cold outreach sequences. Email templates, cold call scripts, LinkedIn messages, subject lines, and response handling.
+description: Use this skill when designing cold outreach sequences. Provides email templates, cold call scripts, LinkedIn messages, subject lines, and response handling frameworks.
 allowed-tools: Read, Write, Edit, WebSearch
 ---
 

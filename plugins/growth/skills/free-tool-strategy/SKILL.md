@@ -1,7 +1,8 @@
 ---
 name: free-tool-strategy
-description: Design free tools and calculators for lead generation and SEO
-tags: [growth, tools, lead-gen]
+description: Use this skill when designing free tools and calculators for lead generation and SEO
+metadata:
+  tags: [growth, tools, lead-gen]
 ---
 
 # Free Tool Strategy Skill

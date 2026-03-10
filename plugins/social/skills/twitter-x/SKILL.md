@@ -1,9 +1,10 @@
 ---
 name: twitter-x
-description: Enables Claude to manage Twitter/X posts, engagement, and account operations through browser automation
-version: 1.0.0
-author: Canifi
-category: social
+description: Use this skill when managing Twitter/X posts, engagement, and account operations through browser automation
+metadata:
+  version: 1.0.0
+  author: Canifi
+  category: social
 ---
 
 # Twitter/X Skill

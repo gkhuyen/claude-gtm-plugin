@@ -1,24 +1,25 @@
 ---
 name: product-strategy
-version: "2.0.0"
-description: Master product strategy, market analysis, competitive positioning, and long-term product vision. Define business models and craft go-to-market strategies that drive success.
-sasmp_version: "1.3.0"
-bonded_agent: 01-strategy-vision
-bond_type: PRIMARY_BOND
-parameters:
-  - name: market_context
-    type: string
-    required: true
-    description: Market veya ürün hakkında context
-  - name: analysis_type
-    type: string
-    enum: [tam_sam_som, competitive, positioning, business_model]
-retry_logic:
-  max_attempts: 3
-  backoff: exponential
-logging:
-  level: info
-  hooks: [start, complete, error]
+description: Use this skill when mastering product strategy, market analysis, competitive positioning, and long-term product vision. Define business models and craft go-to-market strategies that drive success.
+metadata:
+  version: "2.0.0"
+  sasmp_version: "1.3.0"
+  bonded_agent: 01-strategy-vision
+  bond_type: PRIMARY_BOND
+  parameters:
+    - name: market_context
+      type: string
+      required: true
+      description: Market veya ürün hakkında context
+    - name: analysis_type
+      type: string
+      enum: [tam_sam_som, competitive, positioning, business_model]
+  retry_logic:
+    max_attempts: 3
+    backoff: exponential
+  logging:
+    level: info
+    hooks: [start, complete, error]
 ---
 
 # Product Strategy & Vision Skill

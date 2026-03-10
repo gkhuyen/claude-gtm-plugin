@@ -1,9 +1,10 @@
 ---
 name: linkedin
-description: Enables Claude to manage LinkedIn posts, profile, and professional networking through browser automation
-version: 1.0.0
-author: Canifi
-category: social
+description: Use this skill when managing LinkedIn posts, profile, and professional networking through browser automation
+metadata:
+  version: 1.0.0
+  author: Canifi
+  category: social
 ---
 
 # LinkedIn Skill

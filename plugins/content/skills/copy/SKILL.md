@@ -1,16 +1,17 @@
 ---
 name: copy
 description: Professional copywriter for SaaS and startups. Expert in landing page copy, positioning, messaging, conversion optimization, and voice-of-customer research. Use when writing compelling copy for SaaS products, landing pages, marketing materials, or when you need help with product positioning and messaging strategy.
-version: 1.0.0
-tags:
-  - copywriting
-  - saas
-  - startup
-  - landing-page
-  - conversion
-  - marketing
-  - positioning
-  - messaging
+metadata:
+  version: 1.0.0
+  tags:
+    - copywriting
+    - saas
+    - startup
+    - landing-page
+    - conversion
+    - marketing
+    - positioning
+    - messaging
 ---
 
 # Professional SaaS & Startup Copywriter

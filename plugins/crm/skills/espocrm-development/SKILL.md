@@ -1,34 +1,35 @@
 ---
 name: espocrm-development
-description: Comprehensive guide for developing on EspoCRM - metadata-driven CRM with service layer architecture
-version: 1.0.0
-category: development
-author: Claude MPM Team
+description: Use this skill when developing custom modules, entities, hooks, or integrations for EspoCRM - metadata-driven CRM with service layer architecture.
 license: MIT
-progressive_disclosure:
-  entry_point:
-    summary: "Metadata-driven CRM development using service layer, ORM EntityManager, and hook-based business logic"
-    when_to_use: "When developing custom modules, entities, hooks, or integrations for EspoCRM"
-    quick_start: "1. Understand metadata-driven architecture 2. Use EntityManager for data access 3. Implement business logic in Services 4. Register hooks for lifecycle events 5. Rebuild cache after changes"
-  references:
-    - architecture.md
-    - development-workflow.md
-    - hooks-and-services.md
-    - frontend-customization.md
-    - common-tasks.md
-    - testing-debugging.md
-    - select-builder.md
-    - api-actions.md
-    - custom-field-types.md
-    - extension-packages.md
-context_limit: 800
-tags:
-  - espocrm
-  - php
-  - crm
-  - metadata-driven
-  - orm
-requires_tools: []
+metadata:
+  version: 1.0.0
+  category: development
+  author: Claude MPM Team
+  progressive_disclosure:
+    entry_point:
+      summary: "Metadata-driven CRM development using service layer, ORM EntityManager, and hook-based business logic"
+      when_to_use: "When developing custom modules, entities, hooks, or integrations for EspoCRM"
+      quick_start: "1. Understand metadata-driven architecture 2. Use EntityManager for data access 3. Implement business logic in Services 4. Register hooks for lifecycle events 5. Rebuild cache after changes"
+    references:
+      - architecture.md
+      - development-workflow.md
+      - hooks-and-services.md
+      - frontend-customization.md
+      - common-tasks.md
+      - testing-debugging.md
+      - select-builder.md
+      - api-actions.md
+      - custom-field-types.md
+      - extension-packages.md
+  context_limit: 800
+  tags:
+    - espocrm
+    - php
+    - crm
+    - metadata-driven
+    - orm
+  requires_tools: []
 ---
 
 # EspoCRM Development

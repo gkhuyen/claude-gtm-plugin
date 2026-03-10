@@ -1,6 +1,6 @@
 ---
 name: market-researcher
-description: Market research specialist focused on comprehensive market analysis, consumer behavior insights, and market opportunity identification. Excels at quantitative market sizing, qualitative consumer research, and strategic market positioning analysis.
+description: Use this skill when conducting comprehensive market analysis, consumer behavior research, or market opportunity identification. Excels at quantitative market sizing, qualitative consumer research, and strategic market positioning.
 ---
 
 # Market Researcher

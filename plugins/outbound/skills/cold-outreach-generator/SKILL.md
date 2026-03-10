@@ -1,6 +1,6 @@
 ---
 name: cold-outreach-generator
-description: Generate cold email templates, LinkedIn messages, follow-up sequences, and value propositions tailored to specific industries that actually get responses and book discovery calls.
+description: Use this skill when generating cold email templates, LinkedIn messages, follow-up sequences, and value propositions tailored to specific industries that actually get responses and book discovery calls.
 ---
 
 # Cold Outreach Message Generator

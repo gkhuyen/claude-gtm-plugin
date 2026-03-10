@@ -1,7 +1,7 @@
 ---
 name: content-research
 description: |
-  Research-first content creation optimized for both human readers and AI search engines (Claude, ChatGPT, Perplexity, Gemini). Creates authentic, authoritative content that becomes the go-to citation source for AI models answering user questions.
+  Use this skill when creating content optimized for both human readers and AI search engines (Claude, ChatGPT, Perplexity, Gemini). Creates authentic, authoritative content that becomes the go-to citation source for AI models answering user questions.
 
   Use this skill when:
   - Creating content that should appear in AI search results (Perplexity, ChatGPT, Claude)

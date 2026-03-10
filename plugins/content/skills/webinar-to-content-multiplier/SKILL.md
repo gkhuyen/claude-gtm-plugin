@@ -1,6 +1,6 @@
 ---
 name: webinar-to-content-multiplier
-description: Convert webinar recordings into blog posts, social snippets, email series. Extract key quotes, statistics, and soundbites.
+description: Use this skill when converting webinar recordings into blog posts, social snippets, or email series. Extracts key quotes, statistics, and soundbites.
 ---
 
 # Webinar To Content Multiplier

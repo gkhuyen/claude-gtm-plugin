@@ -1,14 +1,15 @@
 ---
 name: lead-generation
 description: B2B demand generation with CAC optimization, multi-channel strategies, and lead qualification frameworks. Use for lead acquisition, nurture campaigns, and conversion optimization. Based on alirezarezvani/claude-skills.
-version: 1.0.0
-category: marketing
-last_updated: 2026-01-19
-source: https://github.com/alirezarezvani/claude-skills
-related_skills:
-  - content-strategy
-  - seo-optimizer
-  - competitive-analysis
+metadata:
+  version: 1.0.0
+  category: marketing
+  last_updated: 2026-01-19
+  source: https://github.com/alirezarezvani/claude-skills
+  related_skills:
+    - content-strategy
+    - seo-optimizer
+    - competitive-analysis
 ---
 
 # Lead Generation Skill

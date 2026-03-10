@@ -1,6 +1,6 @@
 ---
 name: dataforseo-backlinks-api
-description: Retrieve backlink profiles and bulk link metrics using DataForSEO Backlinks for "backlink audit", "referring domains", and "link monitoring".
+description: Use this skill to retrieve backlink profiles and bulk link metrics via DataForSEO Backlinks for "backlink audit", "referring domains", and "link monitoring".
 license: MIT
 metadata:
   author: Leonardo Picciani

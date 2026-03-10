@@ -1,6 +1,6 @@
 ---
 name: bd-email
-description: Craft Business Development emails for RYLLC fractional CTO consultancy. Handles warm reconnects, job posting outreach, rejection follow-ups, VC intros, and custom BD scenarios. Uses established templates and project voice.
+description: Use this skill when crafting Business Development emails for fractional CTO consultancy outreach. Handles warm reconnects, job posting outreach, rejection follow-ups, VC intros, and custom BD scenarios.
 ---
 
 # BD Email Skill

@@ -1,19 +1,20 @@
 ---
 name: app-store-optimization
-description: App Store Optimization toolkit for researching keywords, optimizing metadata, and tracking mobile app performance on Apple App Store and Google Play Store.
-triggers:
-  - ASO
-  - app store optimization
-  - app store ranking
-  - app keywords
-  - app metadata
-  - play store optimization
-  - app store listing
-  - improve app rankings
-  - app visibility
-  - app store SEO
-  - mobile app marketing
-  - app conversion rate
+description: Use this skill when optimizing app store listings, researching keywords, or tracking mobile app performance on Apple App Store and Google Play Store.
+metadata:
+  triggers:
+    - ASO
+    - app store optimization
+    - app store ranking
+    - app keywords
+    - app metadata
+    - play store optimization
+    - app store listing
+    - improve app rankings
+    - app visibility
+    - app store SEO
+    - mobile app marketing
+    - app conversion rate
 ---
 
 # App Store Optimization (ASO)

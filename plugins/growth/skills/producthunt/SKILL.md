@@ -1,9 +1,10 @@
 ---
 name: producthunt
-description: Enables Claude to manage Product Hunt launches, upvotes, and product discovery
-version: 1.0.0
-author: Canifi
-category: social
+description: Use this skill when managing Product Hunt launches, upvotes, and product discovery
+metadata:
+  version: 1.0.0
+  author: Canifi
+  category: social
 ---
 
 # Product Hunt Skill

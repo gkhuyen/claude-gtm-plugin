@@ -1,6 +1,6 @@
 ---
 name: linkedin-post-optimizer
-description: Professional narrative style with line breaks, hashtag strategy, and hooks in first 2 lines to avoid truncation
+description: Use this skill when optimizing LinkedIn posts with professional narrative style, line breaks, hashtag strategy, and hooks in first 2 lines to avoid truncation
 ---
 
 # Linkedin Post Optimizer

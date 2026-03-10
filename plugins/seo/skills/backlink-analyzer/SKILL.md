@@ -1,7 +1,8 @@
 ---
 name: backlink-analyzer
-version: "1.0"
-description: Analyzes backlink profiles to understand link authority, identify toxic links, discover link building opportunities, and monitor competitor link acquisition. Essential for off-page SEO strategy.
+description: Use this skill when analyzing backlink profiles to understand link authority, identify toxic links, discover link building opportunities, and monitor competitor link acquisition. Essential for off-page SEO strategy.
+metadata:
+  version: "1.0"
 ---
 
 # Backlink Analyzer

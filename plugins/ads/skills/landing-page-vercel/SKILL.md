@@ -1,6 +1,6 @@
 ---
 name: landing-page-vercel
-description: Scaffold a production-ready static landing page with working email capture form, analytics, and responsive design. Deploys instantly to Vercel.
+description: Use this skill when scaffolding a production-ready static landing page with working email capture form, analytics, and responsive design. Deploys instantly to Vercel.
 ---
 
 # Landing Page (Vercel)

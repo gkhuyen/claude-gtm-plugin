@@ -1,7 +1,8 @@
 ---
 name: intercom-crm
-description: Manage customer messaging and support with Intercom's conversational platform.
-category: business
+description: Use this skill when managing customer messaging and support with Intercom's conversational platform.
+metadata:
+  category: business
 ---
 # Intercom Skill
 

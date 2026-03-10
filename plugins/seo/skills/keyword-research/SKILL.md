@@ -1,15 +1,16 @@
 ---
 name: keyword-research
-description: Strategic content planning without expensive tools. 6 Circles Method to find what to write about and prioritize it.
-triggers:
-  - keyword research
-  - content topics
-  - what to write about
-  - free seo tools
-  - topic ideation
-  - content planning without tools
-  - 6 circles method
+description: Use this skill when planning content topics strategically without expensive tools. 6 Circles Method to find what to write about and prioritize it.
 allowed-tools: Read, Write, Edit, Grep, Glob, WebSearch, WebFetch, mcp__perplexity-ask__perplexity_ask, AskUserQuestion
+metadata:
+  triggers:
+    - keyword research
+    - content topics
+    - what to write about
+    - free seo tools
+    - topic ideation
+    - content planning without tools
+    - 6 circles method
 ---
 
 # Keyword Research Without Expensive Tools
