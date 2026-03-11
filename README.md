@@ -18,25 +18,25 @@ Install from the plugin marketplace at [claude.com/plugins](https://claude.com/p
 
 ```bash
 # Add the marketplace
-claude plugin marketplace add mbajaj/gtm-plugins
+claude plugin marketplace add manojbajaj95/claude-gtm-plugins
 
 # Install all GTM skills
-claude plugin install gtm-skills@gtm-plugins
+claude plugin install gtm-skills@claude-gtm-plugins
 ```
 
 You can also install individual domain plugins if you only need specific skills:
 
 ```bash
-claude plugin install seo@gtm-plugins
-claude plugin install content@gtm-plugins
-claude plugin install outbound@gtm-plugins
-claude plugin install sales@gtm-plugins
-claude plugin install growth@gtm-plugins
-claude plugin install analytics@gtm-plugins
-claude plugin install strategy@gtm-plugins
-claude plugin install ads@gtm-plugins
-claude plugin install social@gtm-plugins
-claude plugin install crm@gtm-plugins
+claude plugin install seo@claude-gtm-plugins
+claude plugin install content@claude-gtm-plugins
+claude plugin install outbound@claude-gtm-plugins
+claude plugin install sales@claude-gtm-plugins
+claude plugin install growth@claude-gtm-plugins
+claude plugin install analytics@claude-gtm-plugins
+claude plugin install strategy@claude-gtm-plugins
+claude plugin install ads@claude-gtm-plugins
+claude plugin install social@claude-gtm-plugins
+claude plugin install crm@claude-gtm-plugins
 ```
 
 ### Skills CLI
@@ -45,19 +45,19 @@ Use [npx skills](https://github.com/vercel-labs/skills) to install skills direct
 
 ```bash
 # Install all skills
-npx skills add mbajaj/gtm-plugin
+npx skills add manojbajaj95/claude-gtm-plugin
 
 # Install specific skills
-npx skills add mbajaj/gtm-plugin --skill seo-audit copywriting founder-sales
+npx skills add manojbajaj95/claude-gtm-plugin --skill seo-and-aeo-strategy
 
 # List available skills
-npx skills add mbajaj/gtm-plugin --list
+npx skills add manojbajaj95/claude-gtm-plugin --list
 ```
 
 ### Clone and Load Locally
 
 ```bash
-git clone https://github.com/mbajaj/gtm-plugin.git
+git clone https://github.com/manojbajaj95/claude-gtm-plugin.git
 ```
 
 Then open Claude Code in the cloned directory — the plugin loads automatically.
@@ -67,7 +67,7 @@ Then open Claude Code in the cloned directory — the plugin loads automatically
 Add as a submodule for easy updates:
 
 ```bash
-git submodule add https://github.com/mbajaj/gtm-plugin.git .agents/gtm-plugin
+git submodule add https://github.com/manojbajaj95/claude-gtm-plugin.git .agents/claude-gtm-plugin
 ```
 
 ## Getting Started
@@ -114,7 +114,7 @@ Skills cross-reference each other. Ask Claude to write a cold email and it pulls
 ## How It Works
 
 ```
-gtm-plugin/
+claude-gtm-plugin/
 ├── .claude-plugin/          # Plugin manifest
 ├── commands/
 │   └── bootstrap.md         # /bootstrap onboarding command
