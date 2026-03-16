@@ -184,7 +184,7 @@ Skills reference each other and build on the project structure created by `/boot
 ├── `qr-code-generator`
 └── `utm-builder`
 
-### Content & Copywriting (8)
+### Content & Copywriting (7)
 
 ├── `blog-writing-specialist`
 ├── `content-creation-and-marketing`
@@ -192,7 +192,6 @@ Skills reference each other and build on the project structure created by `/boot
 ├── `copywriting-core`
 ├── `newsletter-management`
 ├── `ph-content-recycling`
-├── `twitter-algorithm-optimizer`
 └── `webinar-content-and-events`
 
 ### CRM & Automation (2)
@@ -233,15 +232,12 @@ Skills reference each other and build on the project structure created by `/boot
 ├── `keyword-research-and-clustering`
 └── `seo-and-aeo-strategy`
 
-### Social Media (13)
+### Social Media (10)
 
 ├── `community-building`
-├── `linkedin-automation`
 ├── `linkedin-content`
 ├── `linkedin-personal-branding`
-├── `linkedin-post-optimizer`
 ├── `social-media-management`
-├── `writing-linkedin-posts`
 ├── `x-impact-checker`
 ├── `youtube-plan-new-video`
 ├── `youtube-research-video-topic`
