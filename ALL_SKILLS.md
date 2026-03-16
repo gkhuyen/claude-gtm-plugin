@@ -1,6 +1,6 @@
 # All Skills
 
-Total: **62 skills** across **10 categories**
+Total: **58 skills** across **10 categories**
 
 ## Ads & Paid (2)
 
@@ -20,7 +20,7 @@ plugins/analytics/skills/
 └── utm-builder
 ```
 
-## Content & Copywriting (9)
+## Content & Copywriting (8)
 
 ```
 plugins/content/skills/
@@ -31,8 +31,7 @@ plugins/content/skills/
 ├── newsletter-management
 ├── ph-content-recycling
 ├── twitter-algorithm-optimizer
-├── webinar-content-and-events
-└── writing-linkedin-posts
+└── webinar-content-and-events
 ```
 
 ## CRM & Automation (2)
@@ -43,7 +42,7 @@ plugins/crm/skills/
 └── marketing-automation
 ```
 
-## Growth & Conversion (18)
+## Growth & Conversion (17)
 
 ```
 plugins/growth/skills/
@@ -61,7 +60,6 @@ plugins/growth/skills/
 ├── pr-specialist
 ├── product-hunt-launch
 ├── product-market-fit-analysis
-├── producthunt
 ├── referral-program
 ├── skill-navigator
 └── user-onboarding
@@ -89,7 +87,7 @@ plugins/seo/skills/
 └── seo-and-aeo-strategy
 ```
 
-## Social Media (15)
+## Social Media (13)
 
 ```
 plugins/social/skills/
@@ -98,9 +96,7 @@ plugins/social/skills/
 ├── linkedin-content
 ├── linkedin-personal-branding
 ├── linkedin-post-optimizer
-├── linkedin
 ├── social-media-management
-├── twitter-x
 ├── writing-linkedin-posts
 ├── x-impact-checker
 ├── youtube-plan-new-video

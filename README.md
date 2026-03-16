@@ -172,7 +172,93 @@ Skills reference each other and build on the project structure created by `/boot
 
 ## Skills
 
-See [ALL_SKILLS.md](ALL_SKILLS.md) for the full 62-skill listing. Regenerate anytime with `scripts/generate-skills-readme.sh`.
+### Ads & Paid (2)
+
+├── `ad-campaign-management`
+└── `landing-page-optimization`
+
+### Analytics & Data (4)
+
+├── `app-store-optimization`
+├── `data-and-funnel-analytics`
+├── `qr-code-generator`
+└── `utm-builder`
+
+### Content & Copywriting (8)
+
+├── `blog-writing-specialist`
+├── `content-creation-and-marketing`
+├── `content-strategy-and-planning`
+├── `copywriting-core`
+├── `newsletter-management`
+├── `ph-content-recycling`
+├── `twitter-algorithm-optimizer`
+└── `webinar-content-and-events`
+
+### CRM & Automation (2)
+
+├── `crm-integration`
+└── `marketing-automation`
+
+### Growth & Conversion (17)
+
+├── `ab-test-setup`
+├── `challenge-funnel`
+├── `conversion-rate-optimization`
+├── `customer-success-and-retention`
+├── `executive-dashboard-generator`
+├── `free-tool-strategy`
+├── `growth-strategy`
+├── `lead-generation-and-demand`
+├── `marketing-campaign-management`
+├── `personalization-at-scale`
+├── `ph-community-outreach`
+├── `pr-specialist`
+├── `product-hunt-launch`
+├── `product-market-fit-analysis`
+├── `referral-program`
+├── `skill-navigator`
+└── `user-onboarding`
+
+### Email & Outbound (1)
+
+└── `outbound-email-strategy`
+
+### Sales (1)
+
+└── `sales-and-revenue-operations`
+
+### SEO & AI Search (2)
+
+├── `keyword-research-and-clustering`
+└── `seo-and-aeo-strategy`
+
+### Social Media (13)
+
+├── `community-building`
+├── `linkedin-automation`
+├── `linkedin-content`
+├── `linkedin-personal-branding`
+├── `linkedin-post-optimizer`
+├── `social-media-management`
+├── `writing-linkedin-posts`
+├── `x-impact-checker`
+├── `youtube-plan-new-video`
+├── `youtube-research-video-topic`
+├── `youtube-video-analyst`
+├── `youtube-video-hook`
+└── `youtube`
+
+### Strategy & Positioning (8)
+
+├── `brand-messaging-and-positioning`
+├── `competitor-analysis`
+├── `go-to-market-strategy`
+├── `market-research-analysis`
+├── `marketing-strategy-pmm`
+├── `pitch-deck-creation`
+├── `pricing-strategy`
+└── `product-strategy-and-marketing`
 
 ## Routing Rules
 
@@ -196,9 +282,28 @@ This checks frontmatter fields, naming conventions, description quality, and fil
 
 ## Contributing
 
-Skills are markdown files. Fork the repo, make your changes, and submit a PR.
+**We're actively looking for contributors!** Whether you're a marketer, growth hacker, SEO specialist, or just someone who uses Claude for GTM work — your expertise can help make these skills better for everyone.
 
-Each skill lives in `plugins/<category>/<skill-name>/SKILL.md` and must have valid YAML frontmatter with at least `name` and `description`. Run `./validate-skills.sh` before submitting to catch issues.
+### Ways to contribute
+
+- **New skills** — Have a GTM workflow that Claude should know? Write it as a skill.
+- **Improve existing skills** — Better frameworks, updated best practices, sharper prompts.
+- **Fix incorrect advice** — Found a skill giving bad recommendations? [Open a bug report](https://github.com/manojbajaj95/claude-gtm-plugin/issues/new?template=bug_report.yml).
+- **Add references** — Templates, examples, or supporting material for existing skills.
+- **Documentation** — Improve READMEs, add examples, clarify instructions.
+
+### How to contribute
+
+1. Fork the repo
+2. Create a branch (`git checkout -b my-skill`)
+3. Make your changes — each skill lives in `plugins/<category>/skills/<skill-name>/SKILL.md`
+4. Ensure valid YAML frontmatter with at least `name` and `description`
+5. Run `./validate-skills.sh` to catch issues
+6. Submit a PR
+
+### Reporting issues
+
+If a skill gives incorrect advice, fails to activate, or doesn't use your brand context properly — [file an issue](https://github.com/manojbajaj95/claude-gtm-plugin/issues/new?template=bug_report.yml). The more detail you include (skill name, what you asked, what happened vs. what you expected), the faster we can fix it.
 
 ## License
 
