@@ -17,11 +17,7 @@ Install from the plugin marketplace at [claude.com/plugins](https://claude.com/p
 ### Claude Code
 
 ```bash
-# Add the marketplace
-claude plugin marketplace add manojbajaj95/claude-gtm-plugins
-
-# Install all GTM skills
-claude plugin install gtm-skills@claude-gtm-plugins
+claude plugin add manojbajaj95/claude-gtm-plugin
 ```
 
 ### Skills CLI
