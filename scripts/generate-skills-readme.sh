@@ -22,7 +22,7 @@ echo "Generating skills list from skills/..."
 skills=()
 total_skills=0
 
-for skill_dir in $(ls -d "$SKILLS_DIR"/*/ 2>/dev/null | sort); do
+for skill_dir in "$SKILLS_DIR"/*/; do
     skill_file="${skill_dir}SKILL.md"
     if [ -f "$skill_file" ]; then
         skill_name=$(extract_frontmatter_field "$skill_file" "name")

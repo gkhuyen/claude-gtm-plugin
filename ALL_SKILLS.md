@@ -1,6 +1,6 @@
 # All Skills
 
-Total: **56 skills**
+Total: **57 skills**
 
 ```
 skills/
@@ -34,6 +34,7 @@ skills/
 ├── marketing-automation
 ├── marketing-campaign-management
 ├── marketing-strategy-pmm
+├── networking-outreach
 ├── newsletter-management
 ├── outbound-email-strategy
 ├── personalization-at-scale
